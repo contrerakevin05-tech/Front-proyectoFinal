@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- ======================================
+         META
+    ======================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AnimeVerse
+    </title>
+
+    <!-- ======================================
+         GOOGLE FONTS
+    ======================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ======================================
+         ICONS
+    ======================================= -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+
+    <!-- ======================================
+         CSS
+    ======================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ======================================
+         BACKGROUND
+    ======================================= -->
+
+    <div class="bg-gradient"></div>
+
+    <div class="bg-grid"></div>
+
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="ri-planet-line"></i>
+
+            <span>
+                AnimeVerse
+            </span>
+
+        </div>
+
+        <nav class="menu">
+
+            <button
+                class="tab-btn active"
+                data-target="pokemon"
+            >
+
+                <i class="ri-gamepad-line"></i>
+
+                Pokémon
+
+            </button>
+
+            <button
+                class="tab-btn"
+                data-target="naruto"
+            >
+
+                <i class="ri-fire-line"></i>
+
+                Naruto
+
+            </button>
+
+            <button
+                class="tab-btn"
+                data-target="dragonball"
+            >
+
+                <i class="ri-dragon-line"></i>
+
+                Dragon Ball
+
+            </button>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <div class="online-dot"></div>
+
+            APIs Online
+
+        </div>
+
+    </aside>
+
+    <!-- ======================================
+         MAIN
+    ======================================= -->
+
+    <main class="main-content">
+
+        <!-- ======================================
+             HERO
+        ======================================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+
+                    Multiverse APIs
+
+                </span>
+
+                <h1>
+
+                    Explore the
+                    <span>
+                        Anime Universe
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Proyecto FullStack usando
+                    Node.js, Java, Python,
+                    MySQL y Supabase.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+             LOADER
+        ======================================= -->
+
+        <div
+            id="loader"
+            class="loader hidden"
+        ></div>
+
+        <!-- ======================================
+             ERROR
+        ======================================= -->
+
+        <div
+            id="error-message"
+            class="error-message hidden"
+        ></div>
+
+        <!-- ======================================
+             POKEMON
+        ======================================= -->
+
+        <section
+            id="pokemon"
+            class="content-section active"
+        >
+
+            <div class="section-header">
+
+                <h2>
+                    Pokémon Collection
+                </h2>
+
+                <span>
+                    Node.js + MySQL
+                </span>
+
+            </div>
+
+            <div
+                id="pokemon-container"
+                class="grid-container"
+            ></div>
+
+        </section>
+
+        <!-- ======================================
+             NARUTO
+        ======================================= -->
+
+        <section
+            id="naruto"
+            class="content-section"
+        >
+
+            <div class="section-header">
+
+                <h2>
+                    Naruto Collection
+                </h2>
+
+                <span>
+                    Java + Supabase
+                </span>
+
+            </div>
+
+            <div
+                id="naruto-container"
+                class="grid-container"
+            ></div>
+
+        </section>
+
+        <!-- ======================================
+             DRAGON BALL
+        ======================================= -->
+
+        <section
+            id="dragonball"
+            class="content-section"
+        >
+
+            <div class="section-header">
+
+                <h2>
+                    Dragon Ball Collection
+                </h2>
+
+                <span>
+                    Python + MongoDB
+                </span>
+
+            </div>
+
+            <div
+                id="dragonball-container"
+                class="grid-container"
+            ></div>
+
+        </section>
+
+    </main>
+
+    <!-- ======================================
+         JS
+    ======================================= -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

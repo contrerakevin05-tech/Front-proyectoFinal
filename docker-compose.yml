@@ -1,0 +1,35 @@
+services:
+  # Microservices (Cloud Connected)
+  pokemon-service:
+    build: ./pokemones
+    container_name: pokemon-service
+    ports:
+      - "3001:3001"
+
+  naruto-service:
+    build: ./naruto
+    container_name: naruto-service
+    ports:
+      - "3002:3002"
+
+  dragonball-service:
+    build: ./dragonball
+    container_name: dragonball-service
+    ports:
+      - "3003:3003"
+
+  # Frontend
+  frontend-app:
+    build: ./frontend
+    container_name: frontend-app
+    ports:
+      - "8080:80"
+
+  # SonarQube (Opcional, para pruebas de código)
+  sonarqube:
+    image: sonarqube:lts-community
+    container_name: sonarqube
+    ports:
+      - "9000:9000"
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
